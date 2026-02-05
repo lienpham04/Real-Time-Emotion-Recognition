@@ -1,12 +1,17 @@
-# 🧐 Real-Time Emotion Recognition for Messenger & Zalo
+# Real-Time Emotion Browser Extension
 
-![Logo](images/icon128.png)
+<div align="center">
+  <img src="images/icon128.png" alt="Logo" width="200">
+</div>
 
 > **Ever read a text and wondered if the person was actually angry, or just being sarcastic?**
 
 I built this browser extension to solve that ambiguity. It analyzes your chat messages in real-time and tells you the exact emotion behind the text (from 28 different categories like *Joy, Grief, Remorse, Admiration*), displayed right next to the message bubble.
 
-![Demo](images/UI.png)
+
+<div align="center">
+  <img src="images/UI.png" alt="Demo" width="600">
+</div>
 
 ## 💡 The Idea
 
@@ -28,11 +33,14 @@ Since Deep Learning models are too heavy to run inside a browser, I split the ar
     *   **Model:** Microsoft's `deberta-v3-large` combined with a custom fusion head.
     *   **Processing:** I added a layer of "VADER Rescue" logic. Basically, if the AI gets confused by a factual sentence (e.g., "He got injured"), our rule-based logic steps in to ensure it's correctly flagged as Negative.
 
-![Architecture](images/architecture1.png)
+
+<div align="center">
+  <img src="images/architecture1.png" alt="Architecture" width="800">
+</div>
 
 ## 📦 Installation
 
-This is a local setup (Client-Server). You need to run the backend for the extension to work.
+This is a local setup (Client-Server). You guyes need to run the backend for the extension to work.
 
 ```bash
 cd server
