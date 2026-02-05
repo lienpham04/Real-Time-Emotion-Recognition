@@ -1,8 +1,12 @@
-# 🧐 Real-Time Emotion Browser Extension
+# 🧐 Real-Time Emotion Recognition for Messenger & Zalo
+
+![Logo](images/icon128.png)
+
+> **Ever read a text and wondered if the person was actually angry, or just being sarcastic?**
 
 I built this browser extension to solve that ambiguity. It analyzes your chat messages in real-time and tells you the exact emotion behind the text (from 28 different categories like *Joy, Grief, Remorse, Admiration*), displayed right next to the message bubble.
 
-![Demo](images/demo.png)
+![Demo](images/UI.png)
 
 ## 💡 The Idea
 
@@ -24,7 +28,7 @@ Since Deep Learning models are too heavy to run inside a browser, I split the ar
     *   **Model:** Microsoft's `deberta-v3-large` combined with a custom fusion head.
     *   **Processing:** I added a layer of "VADER Rescue" logic. Basically, if the AI gets confused by a factual sentence (e.g., "He got injured"), our rule-based logic steps in to ensure it's correctly flagged as Negative.
 
-![Architecture](images/system_architecture.png)
+![Architecture](images/architecture1.png)
 
 ## 📦 Installation
 
@@ -32,5 +36,10 @@ This is a local setup (Client-Server). You need to run the backend for the exten
 
 ```bash
 cd server
+# Install dependencies
 pip install -r requirements.txt
+
+# Place you guys 'best_model.pt' file inside the /server folder!
+
+# Run the API
 uvicorn main:app --reload
