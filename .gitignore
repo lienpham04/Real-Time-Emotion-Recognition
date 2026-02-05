@@ -9,3 +9,5 @@ __pycache__/
 *.pt
 *.bin
 *.pth
+
+server/model.ipynb
