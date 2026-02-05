@@ -4,13 +4,13 @@
   <img src="images/icon128.png" alt="Logo" width="200">
 </div>
 
-> **Ever read a text and wondered if the person was actually angry, or just being sarcastic?**
+> **Ever read a text and wondered if the person was actually angry, or just being sarcastic? :)) **
 
 I built this browser extension to solve that ambiguity. It analyzes your chat messages in real-time and tells you the exact emotion behind the text (from 28 different categories like *Joy, Grief, Remorse, Admiration*), displayed right next to the message bubble.
 
 
 <div align="center">
-  <img src="images/UI.png" alt="Demo" width="600">
+  <img src="images/UI.png" alt="Demo" width="500">
 </div>
 
 ## 💡 The Idea
@@ -35,7 +35,7 @@ Since Deep Learning models are too heavy to run inside a browser, I split the ar
 
 
 <div align="center">
-  <img src="images/architecture1.png" alt="Architecture" width="800">
+  <img src="images/architecture1.png" alt="Architecture" width="700">
 </div>
 
 ## 📦 Installation
